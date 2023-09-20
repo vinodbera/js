@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+
+    <style>
+        .menu-item {
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .menu-item.active {
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <h1>DOM</h1>
+    <input></input>
+    <h1 id="element-below-the-input-tag">TEST</h1>
+    <h4 class="normal">Targeting all elements of similar types</h4>
+    <h4 class="lorem">Lorem ipsum dolor sit amet.</h4>
+    <h4 class="lorem lorem2 lorem3" id="loremID">Facere error aspernatur ut alias eveniet.</h4>
+    
+    <button>This is a button.</button>
+
+    <ul>
+        <li onclick="menuClicked(this)" class="menu-item">item1</li>
+        <li onclick="menuClicked(this)" class="menu-item menu active">item2</li>
+        <li onclick="menuClicked(this)" class="menu-item">item3</li>
+        <li onclick="menuClicked(this)" class="menu-item">item4</li>
+        <li onclick="menuClicked(this)" class="menu-item">item5</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
